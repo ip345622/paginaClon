@@ -13,6 +13,12 @@
     background: url('../img/fondo.jpg');
     height: 500px;
     background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(132, 202, 219) 90%), url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 .header-principal{
     background: #234380;
@@ -24,6 +30,8 @@
 
   .sociales{
     display: flex;
+    
+    cursor: pointer;
   }
   .sociales img:nth-child(3){
     margin-right: 4px;
@@ -40,32 +48,87 @@
     margin-left: 5px;
     border-right: 2px solid #fff;
     padding-right: 4px;
+    
+    cursor: pointer;
   }
   .contacto p img{
     width: 20px;
     padding: 0;
+    cursor: pointer;
   }
 
   .navegacion{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  .logo span{
+    font-weight: bold;
+    font-size: 5vh;
   }
   .navegacion .links ul,li{
-    display: flex;
     list-style: none;
   }
   .navegacion .links,   .logo, a{
     color: #fff;
     text-decoration: none;
   }
-  .links {
-    justify-content: space-evenly;
+  ul {
+    width: 170%;
+    margin-top: 25px;
+    display: flex;
+    
   }
-
-  .inicio{
+  ul a{
+    margin-left: 30px;
+  }
+  ul a:hover{
+    color: #ee6d3b;
+    border-bottom: 1px solid #ee6d3b ;
+  }
+  .buscador{
+    display: flex;
+    height: 40px;
+    width: 20%;
+  }
+  .buscador button{
+    width: 200px;
+    height: 40px;
     color: #fff;
+    background: #ec3305;
+    border: none;
+    cursor: pointer;
   }
-
+  .buscador button:hover{
+    color: #fff;
+    background: #e44922;
+    border: 1px solid #fff;
+  }
+  .buscador img{
+    margin: auto;
+    cursor: pointer;
+  }
+  .bienvenida{
+    color: #fff;
+    margin-left: 300px;
+    font-size: 3vh;
+    margin-bottom: 10px;
+  }
+  .inicio{
+    margin-top: 40px;
+    margin-left: 300px;
+  }
+  .inicio span{
+    border: none;
+    background: #234380;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .inicio span:hover{
+    background: #4163a3;
+    border: 1px solid #fff;
+  }
   /* cuerpo */
   .promociones{
     width: 100%;
@@ -84,6 +147,28 @@
     width: 700px;
     height: 500px;
   }
+  .promociones .car button{
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    background: #ec3305;
+    border: none;
+    cursor: pointer; 
+    margin-top: 50px;
+    margin-left: 30px;
+    display: block;
+  }
+  .promociones .car button:hover{
+    color: #fff;
+    background: #e44922;
+    border: 1px solid #fff;
+  }
+  .promociones .car .titulo-promo{
+    font-size: 3vh;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 100px;
+  }
 
   .promociones .car:nth-child(2){
     background: url("../img/promocion2.jpg");
@@ -96,7 +181,7 @@
     background-size: cover;
     width: 450px;
     height: 500px;
-  } 
+  }
 
   /* Galeria */
   .destinos h2{
