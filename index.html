@@ -15,7 +15,7 @@
     <header>
         <div class="header-principal">
             <div class="sociales">
-                <img src="assets/svg/facebook.svg" alt="facebook" class="icono">
+                <img src="assets/svg/facebookblanco.svg" alt="facebook" class="icono">
                 <img src="assets/svg/linkeding.svg" alt="linkeding" class="icono">
                 <img src="assets/svg/google.svg" alt="google" class="icono">
                 <p>contact@mixmap.com</p>
@@ -24,7 +24,7 @@
                 <p>(000)999-656-897</p>
                 <p>Login</p>
                 <p>Sign Up</p>
-                <p>EUR <img src="assets/svg/flechaAbajo.svg" alt="flecha abajo"></p>
+                <p>EUR ˅</p>
             </div>
         </div>
         <div class="navegacion">
@@ -48,46 +48,64 @@
                 <img src="assets/svg/buscador.svg" alt="buscador">
             </div>
         </div>
-            <div class="bienvenida">
-                <h1>Hi Three!</h1>
+        <div class="bienvenida">
+            <h1>Hi Three!</h1>
             <p>Where would you like to go?</p>
-            </div>
-            <section class="inicio">
-                <span>Hotel</span>
-                <span>Tour</span>
-                <span>Activity</span>
-                <span>Rental</span>
-                <span>Car Rental</span>
-                <span>Car Transfer</span>
-            </section>
+        </div>
+        <section class="inicio">
+            <span>Hotel</span>
+            <span>Tour</span>
+            <span>Activity</span>
+            <span>Rental</span>
+            <span>Car Rental</span>
+            <span>Car Transfer</span>
+        </section>
     </header>
     <main>
         <section class="promociones">
             <div class="car">
                 <button>HOUDAY SALE</button>
-                <span class="titulo-promo">Special Offters</span>
-                <p>Find Your perfect Hotels Get best princes on 20,000</p>
+                <span class="titulo-promo1">Special Offters</span>
+                <p class="car__parrafo">Find Your perfect Hotels Get best princes on 20,000</p>
             </div>
             <div class="car">
                 <img src="assets/svg/email.svg" alt="email" class="icono">
-                <span class="titulo-promo">Newsletters</span>
-                <p>Join for free and get our</p>
+                <span class="titulo-promo2">Newsletters</span>
+                <p class="car__parrafo2">Join for free and get our</p>
             </div>
             <div class="car">
                 <img src="assets/svg/nota.svg" alt="nota" class="icono">
-                <span class="titulo-promo">Special Offters</span>
-                <p>Find Your perfect Hotels Get best princes on 20,000</p>
+                <span class="titulo-promo2">Special Offters</span>
+                <p class="car__parrafo">Find Your perfect Hotels Get best princes on 20,000</p>
             </div>
         </section>
         <section class="destinos">
             <h2>Top Destinations</h2>
             <div class="galeria">
-                <img src="assets/img/viajes.jpg" alt="viajes">
-                <img src="assets/img/viajes2.jpg" alt="viajes">
-                <img src="assets/img/viajes3.jpg" alt="viajes">
-                <img src="assets/img/viajes4.jpg" alt="viajes">
-                <img src="assets/img/viajes5.jpg" alt="viajes">
-                <img src="assets/img/viajes6.jpg" alt="viajes">
+                <div class="texto-img">
+                    <img src="assets/img/viajes.jpg" alt="viajes">
+                    <p>New Jersey</p>
+                </div>
+                <div class="texto-img">
+                    <img src="assets/img/viajes2.jpg" alt="viajes">
+                    <p>San Francisco</p>
+                </div>
+                <div class="texto-img">
+                    <img src="assets/img/viajes3.jpg" alt="viajes">
+                    <p>Virginia</p>
+                </div>
+                <div class="texto-img">
+                    <img src="assets/img/viajes4.jpg" alt="viajes">
+                    <p>California</p>
+                </div>
+                <div class="texto-img">
+                    <img src="assets/img/viajes5.jpg" alt="viajes">
+                    <p>Los Angeles</p>
+                </div>
+                <div class="texto-img">
+                    <img src="assets/img/viajes6.jpg" alt="viajes">
+                    <p>Nevada</p>
+                </div>
             </div>
         </section>
     </main>
@@ -102,41 +120,58 @@
             </div>
             <div class="mandarcorreo">
                 <form action="#">
-                    <input type="email" name="email" id="email" placeholder="Your Email" class="correo">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
                     <input type="submit" name="boton" class="boton-email">
                 </form>
             </div>
         </div>
         <div class="mapa-pagina">
-            <span>NEED HELP?</span>
-            <span>COMPANY</span>
-            <span>SUPPORT</span>
-            <span>SEtTING</span>
+            <div class="opciones">
+                <span>NEED HELP?</span>
+                <div class="llamada">
+                    <span>Call Us</span>
+                    <p>+ 00 222 44 5678</p>
+                </div>
+                <div class="llamada">
+                    <span>Email</span>
+                    <p class="email-pro">[Email protect]</p>
+                </div>
+                <div class="llamada">
+                    <p>Flow Us</p>
+                    <img src="assets/svg/facebook.svg" alt="facebook">
+                    <img src="assets/svg/twitter.svg" alt="twitter">
+                    <img src="assets/svg/instalgram.svg" alt="instalgram">
+                </div>
+            </div>
+            <div class="opciones">
+                <span>COMPANY</span>
+                <p>About Us</p>
+                <p>Community Blog</p>
+                <p>Rewards</p>
+                <p>Work With Us</p>
+                <p>Meet the learn</p>
+            </div>
+            <div class="opciones">
+                <span>SUPPORT</span>
+                <p>Account</p>
+                <p>Legal</p>
+                <p>Contact</p>
+                <p>Affiliate Program</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="settings">
+                <span>SETTING</span>
+                <label for="moneda">Currencies</label>
+                <select name="moneda" id="moneda">
+                    <option value="USD">USD</option>
+                    <option value="MXN">MXN</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+
+            </div>
+
         </div>
-        <div class="llamada">
-            <span>Call Us</span>
-            <p>+ 00 222 44 5678</p>
-        </div>
-        <div class="llamada">
-            <span>Email</span>
-            <p class="email-pro">[Email protect]</p>
-        </div>
-        <div class="llamada">
-            <p>Flow Us</p>
-            <img src="assets/svg/facebook.svg" alt="facebook">
-            <img src="assets/svg/twitter.svg" alt="twitter">
-            <img src="assets/svg/instalgram.svg" alt="instalgram">
-        </div>
-        <a href="#">About Us</a>
-        <a href="#">Community Blog</a>
-        <a href="#">Rewards</a>
-        <a href="#">Work With Us</a>
-        <a href="#">Meet the Team</a>
-        <a href="#">Account</a>
-        <a href="#">Legal</a>
-        <a href="#">Contact</a>
-        <a href="#">Affiliate program</a>
-        <a href="#">Privacy Policy</a>
         <hr>
         <div class="fin-footer">
             <span>copyright &copy; 2023 by <i>Israel</i></span>

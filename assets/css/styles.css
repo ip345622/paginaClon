@@ -9,6 +9,8 @@
       font-family: 'Poppins', sans-serif;
   }
 
+  /* header */
+
   header{
     background: url('../img/fondo.jpg');
     height: 500px;
@@ -30,33 +32,31 @@
 
   .sociales{
     display: flex;
-    
     cursor: pointer;
   }
   .sociales img:nth-child(3){
     margin-right: 4px;
-    border-right: 2px solid #fff;
+    border-right: 2px solid #4163a3;
   }
   .sociales p{
     margin: auto;
+    margin-left: 10px;
   }
   .contacto{
     display: flex;
   }
   .contacto p{
     margin: auto;
-    margin-left: 5px;
-    border-right: 2px solid #fff;
+    margin-left: 10px;
+    border-right: 2px solid #4163a3;
     padding-right: 4px;
     
     cursor: pointer;
   }
-  .contacto p img{
-    width: 20px;
-    padding: 0;
-    cursor: pointer;
+  .contacto p:nth-child(4){
+    border: none;
   }
-
+/* header parte dos */
   .navegacion{
     display: flex;
     justify-content: space-around;
@@ -69,7 +69,11 @@
   .navegacion .links ul,li{
     list-style: none;
   }
-  .navegacion .links,   .logo, a{
+  .navegacion .links, .logo{
+    color: #fff;
+    text-decoration: none;
+  }
+  .navegacion .links a{
     color: #fff;
     text-decoration: none;
   }
@@ -130,6 +134,7 @@
     border: 1px solid #fff;
   }
   /* cuerpo */
+  /* promociones */
   .promociones{
     width: 100%;
     display: flex;
@@ -154,8 +159,9 @@
     background: #ec3305;
     border: none;
     cursor: pointer; 
-    margin-top: 50px;
-    margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 100px;
     display: block;
   }
   .promociones .car button:hover{
@@ -163,11 +169,35 @@
     background: #e44922;
     border: 1px solid #fff;
   }
-  .promociones .car .titulo-promo{
+  .promociones .car .titulo-promo1{
     font-size: 3vh;
     font-weight: bold;
-    margin-left: 30px;
+    margin-left: 100px;
+  }
+  .car__parrafo1{
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  .car__parrafo:nth-child(2){
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .car__parrafo:nth-child(3){
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .car img{
+    display: block;
+    width: 60px;
+    margin-left: 50px;
     margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .titulo-promo2{
+    font-size: 3vh;
+    font-weight: bold;
+    margin-left: 50px;
+
   }
 
   .promociones .car:nth-child(2){
@@ -197,8 +227,23 @@
     width: 550px;
     margin: 5px;
   }
-  .galeria img:nth-child(5){
-    height: 430px;
+  .galeria .texto-img:nth-child(5) img{
+    height: 415px;
+  }
+  .texto-img{
+    position: relative;
+    display: inline-block;
+  }
+  .texto-img p{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
   /* footer */
@@ -208,7 +253,7 @@
     height: 100px;
     display: flex;
     justify-content: space-around;
-    background: #77757580;
+    background: #77757559;
   }
   .notificacion img{
     width: 60px;
@@ -234,15 +279,37 @@
     margin-top: auto;
     margin-bottom: auto;
   }
+  .mandarcorreo #email{
+    width: 400px;
+    height: 50px;
+    margin-right: -5px;
+    border: none;
+  }
+  .mandarcorreo .boton-email{
+    height: 50px;
+    width: 100px;
+    margin-right: -5px;
+    border: none;
+    color: #fff;
+    background: #234380;
+    cursor: pointer;
+  }
   .mapa-pagina{
     display: flex;
-    justify-content: space-between;
-    background: #000;
-    color: #fff;
+    justify-content: space-around;
+    color: #000;
+    height: 100%;
   }
+  .mapa-pagina span{
+    
+    font-weight: bold;
+  }
+  .opciones p{
+    margin-top: 20px;
+  }
+
 .llamada{
-    margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     border-left: 2px solid #234380;
     background: #72707071;
     width: 200px;
@@ -254,11 +321,26 @@
   .llamada img{
     width: 20px;
   }
-
-  /* semifinal */
-
+  .llamada:nth-child(4){
+    margin-top: -10px;
+    margin-bottom: 100px;
+  }
+  .settings label{
+    display: block;
+    margin-top: 20px;
+  }
+  .settings select{
+    width: 200px;
+    border: none;
+  }
   /* final footer */
   .fin-footer{
     display: flex;
     justify-content: space-around;
+  }
+  .fin-footer span{
+    margin-right: 900px;
+  }
+  .fin-footer .divisas{
+    margin-right: 30px;
   }
