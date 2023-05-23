@@ -176,6 +176,9 @@
     background: #234380;
     text-align: center;
   }
+  .datos{
+    cursor: pointer;
+  }
 
   /*------------------------------ Anuncios ------------------------*/
   .promociones{
