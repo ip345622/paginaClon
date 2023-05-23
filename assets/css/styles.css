@@ -8,12 +8,19 @@
       font-family: 'Braah One', sans-serif;
       font-family: 'Poppins', sans-serif;
   }
+  body {
+    overflow-x: hidden;
+  }
+  
 
-  /* header */
+  /* --------------------Inicio-Header ---------------------------------*/
 
+  .header-responsive, .navegacion-responsive{
+    display: none;
+  }
   header{
     background: url('../img/fondo.jpg');
-    height: 500px;
+    height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -56,7 +63,7 @@
   .contacto p:nth-child(4){
     border: none;
   }
-/* header parte dos */
+/* ------------------------------header parte dos ------------ */
   .navegacion{
     display: flex;
     justify-content: space-around;
@@ -86,7 +93,7 @@
   ul a{
     margin-left: 30px;
   }
-  ul a:hover{
+  .navegacion ul a:hover{
     color: #ee6d3b;
     border-bottom: 1px solid #ee6d3b ;
   }
@@ -112,6 +119,7 @@
     margin: auto;
     cursor: pointer;
   }
+  /* ------------------------------Inicio------------------------------- */
   .bienvenida{
     color: #fff;
     margin-left: 300px;
@@ -129,12 +137,47 @@
     padding: 10px;
     cursor: pointer;
   }
+  .inicio span:nth-child(1){
+    background: #4163a3;
+    border: 1px solid #fff;
+  }
   .inicio span:hover{
     background: #4163a3;
     border: 1px solid #fff;
   }
-  /* cuerpo */
-  /* promociones */
+
+  /*----------------------------Inicio-cuerpo ----------------------------*/
+  /* ------------------------ Agendar cita-------------------------- */
+  .agendar{
+    display: flex;
+    width: 150%;
+    margin-top: -170px;
+    margin-bottom: 100px;
+    height: 100px;
+  }
+  .datos{
+    background: #fff;
+    display: block;
+    color: #000;
+    width: 260px;
+  }
+  .datos img{
+    display: flex;
+    
+  }
+  .datos p{
+    color: #234380;
+  }
+  .datos:nth-child(1){
+    margin-left: 300px;
+  }
+  .datos:nth-child(5){
+    color: #fff;
+    background: #234380;
+    text-align: center;
+  }
+
+  /*------------------------------ Anuncios ------------------------*/
   .promociones{
     width: 100%;
     display: flex;
@@ -213,7 +256,9 @@
     height: 500px;
   }
 
-  /* Galeria */
+  /* ------------------------Parte dos del body ----------------------- */
+
+  /*---------------------------- Galeria -----------------------*/
   .destinos h2{
     margin-left: 99px;
   }
@@ -221,11 +266,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* grid-template-columns: repeat(3,1fr); */
   }
   .galeria img{
     width: 550px;
     margin: 5px;
+  }
+  .galeria img:hover{
+    width: 600px;
   }
   .galeria .texto-img:nth-child(5) img{
     height: 415px;
@@ -246,7 +293,8 @@
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   }
 
-  /* footer */
+  /*-------------------------------- footer -------------------------- */
+  /* -------------------------Correo-------------------------- */
   .salida{
     margin-top: 20px;
     width: 100%;
@@ -294,6 +342,7 @@
     background: #234380;
     cursor: pointer;
   }
+  /* -----------------------------Mapa pagina--------------------- */
   .mapa-pagina{
     display: flex;
     justify-content: space-around;
@@ -333,7 +382,7 @@
     width: 200px;
     border: none;
   }
-  /* final footer */
+  /*-------------------------------- final footer ---------------------*/
   .fin-footer{
     display: flex;
     justify-content: space-around;
@@ -344,3 +393,96 @@
   .fin-footer .divisas{
     margin-right: 30px;
   }
+
+
+
+  @media only screen and (max-width: 600px) {
+    .header-principal{
+      display: none;
+    }
+    .navegacion{
+      display: none;
+    }
+    header{
+      width: 100%;
+      height: 500px;
+      color: #000;
+      text-align: center;
+    }
+    .header-responsive{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .sociales {
+      display: block;
+    }
+    .bienvenida{
+      display: block;
+      margin-left: auto;
+      text-align: center;
+    }
+    .inicio{
+      display: none;
+    }
+    .navegacion-responsive{
+      display: block;
+    }
+    .navegacion-responsive .links ul{
+      display: block;
+    }
+    .promociones{
+      display: block;
+      width: 100%;
+    }
+    .promociones .car:nth-child(1){
+      background: url("../img/promocion1.jpg");
+      background-size: cover;
+      margin-left: 30px;
+      width: 450px;
+    height: 500px;
+    }
+    .galeria{
+      width: 100%;
+    }
+    .galeria img{
+      width: 100%;
+    }
+    .salida{
+      display: block;
+      width: 100%;
+      height: 120px;
+    }
+    .mandarcorreo #email{
+      width: 300px;
+    }
+    .mapa-pagina{
+      width: 100%;
+      display: block;
+      text-align: center;
+      justify-content: center;
+    }
+    .opciones{
+      margin-bottom: 10px;
+      
+    }
+    .llamada{
+      width: 100%;
+    }
+    .llamada:nth-child(4){
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+    .settings{
+      margin-bottom: 30px;
+    }
+    .fin-footer{
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+    }
+    .fin-footer span{
+      margin-right: 100px;
+    }
+  }
+  
